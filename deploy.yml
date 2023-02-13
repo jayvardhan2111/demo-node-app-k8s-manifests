@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-node-app-deploy
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: demo-node
+  template:
+    metadata:
+      labels:
+        app: demo-node
+    spec:
+      containers:
+        - name: app
+          image: davidjay2111/demo-node-repo:latest
+          ports:
+            - containerPort: 3000
