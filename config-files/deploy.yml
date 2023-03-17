@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: app
-          image: davidjay2111/demo-node-repo:build-61
+          image: davidjay2111/demo-node-repo:build-62
           ports:
             - containerPort: 3000
